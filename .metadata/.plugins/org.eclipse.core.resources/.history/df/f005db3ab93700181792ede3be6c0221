@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com;
+
+import java.util.Date;
+
+/**
+ * @author 271157
+ *
+ */
+public class BlockChain {
+	public String hash;
+	public String previousHash;
+	private String data; //our data will be a simple message.
+	private long timeStamp; //as number of milliseconds since 1/1/1970.
+
+	//BlockChain Constructor.
+	public BlockChain(String data,String previousHash ) {
+		this.data = data;
+		this.previousHash = previousHash;
+		this.timeStamp = new Date().getTime();
+	}
+}
